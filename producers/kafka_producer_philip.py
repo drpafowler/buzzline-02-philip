@@ -63,7 +63,7 @@ def get_message_interval() -> int:
 
 def generate_messages(producer, topic, interval_secs):
     """
-    Generate a stream of buzz messages and send them to a Kafka topic.
+    Generate a stream of dad joke messages and send them to a Kafka topic.
 
     Args:
         producer (KafkaProducer): The Kafka producer instance.
