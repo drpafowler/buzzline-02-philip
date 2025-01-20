@@ -1636,3 +1636,673 @@
 2025-01-17 15:54:24.154 | WARNING  | __main__:generate_messages:84 - Producer interrupted by user.
 2025-01-17 15:54:24.155 | INFO     | __main__:generate_messages:89 - Kafka producer closed.
 2025-01-17 15:54:24.156 | INFO     | __main__:main:130 - END producer.
+2025-01-20 11:42:03.522 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-20 11:42:03.559 | INFO     | __main__:main:105 - START producer.
+2025-01-20 11:42:03.559 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-20 11:42:03.560 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-20 11:42:03.560 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 11:42:03.900 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1001, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'AQw24yRlTRWUUPd2A8Fx3A', 'controller_id': 1001}
+2025-01-20 11:42:03.900 | INFO     | __main__:get_kafka_topic:48 - Kafka topic: buzzline
+2025-01-20 11:42:03.901 | INFO     | __main__:get_message_interval:55 - Message interval: 1 seconds
+2025-01-20 11:42:03.901 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 11:42:03.901 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-20 11:42:04.008 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-20 11:42:04.008 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 11:42:04.321 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline' already exists. Clearing it out...
+2025-01-20 11:42:04.321 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 11:42:04.662 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-01-20 11:42:04.663 | INFO     | __main__:main:121 - Kafka topic 'buzzline' is ready.
+2025-01-20 11:42:04.663 | INFO     | __main__:main:127 - Starting message production to topic 'buzzline'...
+2025-01-20 11:42:04.664 | INFO     | __main__:generate_messages:79 - Dad joke: A steak pun is a rare medium well done.
+2025-01-20 11:42:04.664 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': A steak pun is a rare medium well done.
+2025-01-20 11:42:05.665 | INFO     | __main__:generate_messages:79 - Dad joke: They say that breakfast is the most important meal of the day. Well, not if it’s poisoned. Then the antidote becomes the most important.
+2025-01-20 11:42:05.665 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': They say that breakfast is the most important meal of the day. Well, not if it’s poisoned. Then the antidote becomes the most important.
+2025-01-20 11:42:06.665 | INFO     | __main__:generate_messages:79 - Dad joke: What do you get if you cross an angry sheep with a moody cow? An animal that’s in a baaaaad mooood.
+2025-01-20 11:42:06.666 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do you get if you cross an angry sheep with a moody cow? An animal that’s in a baaaaad mooood.
+2025-01-20 11:42:07.666 | INFO     | __main__:generate_messages:79 - Dad joke: An apple a day keeps the doctor away. At least it does if you throw it hard enough.
+2025-01-20 11:42:07.667 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': An apple a day keeps the doctor away. At least it does if you throw it hard enough.
+2025-01-20 11:42:08.668 | INFO     | __main__:generate_messages:79 - Dad joke: What sounds like a sneeze and is made of leather? A shoe.
+2025-01-20 11:42:08.668 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What sounds like a sneeze and is made of leather? A shoe.
+2025-01-20 11:42:09.670 | INFO     | __main__:generate_messages:79 - Dad joke: A man found a magic lamp with a genie that offered him three wishes. The man said, “For my first wish, I’d like to be rich.” “Okay, Rich,” said the genie. “What would you like for your second wish?”
+2025-01-20 11:42:09.670 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': A man found a magic lamp with a genie that offered him three wishes. The man said, “For my first wish, I’d like to be rich.” “Okay, Rich,” said the genie. “What would you like for your second wish?”
+2025-01-20 11:42:10.671 | INFO     | __main__:generate_messages:79 - Dad joke: When does a joke become a dad joke? When it becomes apparent.
+2025-01-20 11:42:10.675 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': When does a joke become a dad joke? When it becomes apparent.
+2025-01-20 11:42:11.677 | INFO     | __main__:generate_messages:79 - Dad joke: I finally watched that documentary on clocks. It was about time.
+2025-01-20 11:42:11.678 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I finally watched that documentary on clocks. It was about time.
+2025-01-20 11:42:12.679 | INFO     | __main__:generate_messages:79 - Dad joke: What did the sink tell the toilet? You look flushed!
+2025-01-20 11:42:12.679 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What did the sink tell the toilet? You look flushed!
+2025-01-20 11:42:13.680 | INFO     | __main__:generate_messages:79 - Dad joke: Why did the nose feel sad? It was always getting picked on.
+2025-01-20 11:42:13.681 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why did the nose feel sad? It was always getting picked on.
+2025-01-20 11:42:14.682 | INFO     | __main__:generate_messages:79 - Dad joke: What do you call a kangaroo’s lazy joey? A pouch potato.
+2025-01-20 11:42:14.682 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do you call a kangaroo’s lazy joey? A pouch potato.
+2025-01-20 11:42:15.683 | INFO     | __main__:generate_messages:79 - Dad joke: Why do dragons sleep during the day? Because they like to fight knights.
+2025-01-20 11:42:15.684 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why do dragons sleep during the day? Because they like to fight knights.
+2025-01-20 11:42:16.684 | INFO     | __main__:generate_messages:79 - Dad joke: What are the strongest days of the week? Saturday and Sunday. All the others are weekdays.
+2025-01-20 11:42:16.685 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What are the strongest days of the week? Saturday and Sunday. All the others are weekdays.
+2025-01-20 11:42:17.685 | INFO     | __main__:generate_messages:79 - Dad joke: Why couldn’t the bike stand up on its own? It was too tired.
+2025-01-20 11:42:17.685 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why couldn’t the bike stand up on its own? It was too tired.
+2025-01-20 11:42:18.686 | INFO     | __main__:generate_messages:79 - Dad joke: What do you call a bear that is missing his ears? B.
+2025-01-20 11:42:18.686 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do you call a bear that is missing his ears? B.
+2025-01-20 11:42:19.687 | INFO     | __main__:generate_messages:79 - Dad joke: I just spent $300 on a limo and learned it doesn't come with a driver. I can't believe I have nothing to chauffer it.
+2025-01-20 11:42:19.688 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I just spent $300 on a limo and learned it doesn't come with a driver. I can't believe I have nothing to chauffer it.
+2025-01-20 11:42:20.689 | INFO     | __main__:generate_messages:79 - Dad joke: This ham sandwich walks into a bar and orders a drink. The bartender says, “Sorry, we don’t serve food here.”
+2025-01-20 11:42:20.689 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': This ham sandwich walks into a bar and orders a drink. The bartender says, “Sorry, we don’t serve food here.”
+2025-01-20 11:42:21.690 | INFO     | __main__:generate_messages:79 - Dad joke: It’s raining cats and dogs, so be careful not to step in a poodle.
+2025-01-20 11:42:21.691 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': It’s raining cats and dogs, so be careful not to step in a poodle.
+2025-01-20 11:42:22.692 | INFO     | __main__:generate_messages:79 - Dad joke: What do you call a cow with no legs? Ground beef.
+2025-01-20 11:42:22.692 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do you call a cow with no legs? Ground beef.
+2025-01-20 11:42:23.693 | INFO     | __main__:generate_messages:79 - Dad joke: Why did police arrest the turkey? They suspected fowl play.
+2025-01-20 11:42:23.693 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why did police arrest the turkey? They suspected fowl play.
+2025-01-20 11:42:24.694 | INFO     | __main__:generate_messages:79 - Dad joke: How do you make a tissue dance? You put a little boogie in it.
+2025-01-20 11:42:24.695 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': How do you make a tissue dance? You put a little boogie in it.
+2025-01-20 11:42:25.695 | INFO     | __main__:generate_messages:79 - Dad joke: Why don’t they play poker in the jungle? Too many cheetahs.
+2025-01-20 11:42:25.695 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why don’t they play poker in the jungle? Too many cheetahs.
+2025-01-20 11:42:26.696 | INFO     | __main__:generate_messages:79 - Dad joke: MIlk is the fastest liquid on earth. It's pasterized before you even see it!
+2025-01-20 11:42:26.696 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': MIlk is the fastest liquid on earth. It's pasterized before you even see it!
+2025-01-20 11:42:27.696 | INFO     | __main__:generate_messages:79 - Dad joke: My boss told me to have a good day, so I went home!
+2025-01-20 11:42:27.697 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': My boss told me to have a good day, so I went home!
+2025-01-20 11:42:28.697 | INFO     | __main__:generate_messages:79 - Dad joke: My boss asked me why I only get sick on work days. I said it must be my weekend immune system.
+2025-01-20 11:42:28.698 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': My boss asked me why I only get sick on work days. I said it must be my weekend immune system.
+2025-01-20 11:42:29.699 | INFO     | __main__:generate_messages:79 - Dad joke: After dinner my wife asked if I could clear the table. I needed a running start, but I made it.
+2025-01-20 11:42:29.699 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': After dinner my wife asked if I could clear the table. I needed a running start, but I made it.
+2025-01-20 11:42:30.700 | INFO     | __main__:generate_messages:79 - Dad joke: Where do boats go when they’re sick? To the dock.
+2025-01-20 11:42:30.701 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Where do boats go when they’re sick? To the dock.
+2025-01-20 11:42:31.701 | INFO     | __main__:generate_messages:79 - Dad joke: Why was the broom late? It over-swept.
+2025-01-20 11:42:31.703 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why was the broom late? It over-swept.
+2025-01-20 11:42:32.703 | INFO     | __main__:generate_messages:79 - Dad joke: I just found out Albert Einstein existed. My whole life I thought he was a theoretical physicist.A comma. A literalist takes everything literally. A kleptomaniac takes everything, literally.
+2025-01-20 11:42:32.703 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I just found out Albert Einstein existed. My whole life I thought he was a theoretical physicist.A comma. A literalist takes everything literally. A kleptomaniac takes everything, literally.
+2025-01-20 11:42:33.704 | INFO     | __main__:generate_messages:79 - Dad joke: Did you hear Bruce Springsteen changed the lyrics to one of his songs? What’s he going to change next—his hair? His clothes? His face?
+2025-01-20 11:42:33.705 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Did you hear Bruce Springsteen changed the lyrics to one of his songs? What’s he going to change next—his hair? His clothes? His face?
+2025-01-20 11:42:34.706 | INFO     | __main__:generate_messages:79 - Dad joke: What do you call a beehive without an exit? Un-bee-lievable.
+2025-01-20 11:42:34.707 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do you call a beehive without an exit? Un-bee-lievable.
+2025-01-20 11:42:35.707 | INFO     | __main__:generate_messages:79 - Dad joke: What has five toes and isn't your foot? My foot.
+2025-01-20 11:42:35.708 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What has five toes and isn't your foot? My foot.
+2025-01-20 11:42:36.708 | INFO     | __main__:generate_messages:79 - Dad joke: I thought about going on an all-almond diet. But that's just nuts.
+2025-01-20 11:42:36.709 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I thought about going on an all-almond diet. But that's just nuts.
+2025-01-20 11:42:37.371 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-20 11:42:37.372 | INFO     | __main__:main:78 - START consumer.
+2025-01-20 11:42:37.372 | INFO     | __main__:get_kafka_topic:35 - Kafka topic: buzzline
+2025-01-20 11:42:37.372 | INFO     | __main__:get_kafka_consumer_group_id:42 - Kafka consumer group id: default_group
+2025-01-20 11:42:37.372 | INFO     | __main__:main:83 - Consumer: Topic 'buzzline' and group 'default_group'...
+2025-01-20 11:42:37.372 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 11:42:37.372 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='buzzline' and group ID='default_group'.
+2025-01-20 11:42:37.478 | INFO     | utils.utils_consumer:create_kafka_consumer:57 - Kafka consumer created successfully.
+2025-01-20 11:42:37.478 | INFO     | __main__:main:89 - Polling messages from topic 'buzzline'...
+2025-01-20 11:42:37.627 | INFO     | __main__:process_message:62 - Processing message: “I can tolerate algebra, maybe even a little calculus, but geometry is where I draw the line.”
+2025-01-20 11:42:37.627 | INFO     | __main__:process_message:62 - Processing message: Why couldn't the bicycle stand up by itself? It was two tired.
+2025-01-20 11:42:37.627 | INFO     | __main__:process_message:62 - Processing message: A steak pun is a rare medium well done.
+2025-01-20 11:42:37.627 | INFO     | __main__:process_message:62 - Processing message: They say that breakfast is the most important meal of the day. Well, not if it’s poisoned. Then the antidote becomes the most important.
+2025-01-20 11:42:37.627 | INFO     | __main__:process_message:62 - Processing message: What do you get if you cross an angry sheep with a moody cow? An animal that’s in a baaaaad mooood.
+2025-01-20 11:42:37.627 | INFO     | __main__:process_message:62 - Processing message: An apple a day keeps the doctor away. At least it does if you throw it hard enough.
+2025-01-20 11:42:37.627 | INFO     | __main__:process_message:62 - Processing message: What sounds like a sneeze and is made of leather? A shoe.
+2025-01-20 11:42:37.627 | INFO     | __main__:process_message:62 - Processing message: A man found a magic lamp with a genie that offered him three wishes. The man said, “For my first wish, I’d like to be rich.” “Okay, Rich,” said the genie. “What would you like for your second wish?”
+2025-01-20 11:42:37.627 | INFO     | __main__:process_message:62 - Processing message: When does a joke become a dad joke? When it becomes apparent.
+2025-01-20 11:42:37.627 | INFO     | __main__:process_message:62 - Processing message: I finally watched that documentary on clocks. It was about time.
+2025-01-20 11:42:37.627 | INFO     | __main__:process_message:62 - Processing message: What did the sink tell the toilet? You look flushed!
+2025-01-20 11:42:37.627 | INFO     | __main__:process_message:62 - Processing message: Why did the nose feel sad? It was always getting picked on.
+2025-01-20 11:42:37.627 | INFO     | __main__:process_message:62 - Processing message: What do you call a kangaroo’s lazy joey? A pouch potato.
+2025-01-20 11:42:37.627 | INFO     | __main__:process_message:62 - Processing message: Why do dragons sleep during the day? Because they like to fight knights.
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: What are the strongest days of the week? Saturday and Sunday. All the others are weekdays.
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: Why couldn’t the bike stand up on its own? It was too tired.
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: What do you call a bear that is missing his ears? B.
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: I just spent $300 on a limo and learned it doesn't come with a driver. I can't believe I have nothing to chauffer it.
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: This ham sandwich walks into a bar and orders a drink. The bartender says, “Sorry, we don’t serve food here.”
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: It’s raining cats and dogs, so be careful not to step in a poodle.
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: What do you call a cow with no legs? Ground beef.
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: Why did police arrest the turkey? They suspected fowl play.
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: How do you make a tissue dance? You put a little boogie in it.
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: Why don’t they play poker in the jungle? Too many cheetahs.
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: MIlk is the fastest liquid on earth. It's pasterized before you even see it!
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: My boss told me to have a good day, so I went home!
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: My boss asked me why I only get sick on work days. I said it must be my weekend immune system.
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: After dinner my wife asked if I could clear the table. I needed a running start, but I made it.
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: Where do boats go when they’re sick? To the dock.
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: Why was the broom late? It over-swept.
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: I just found out Albert Einstein existed. My whole life I thought he was a theoretical physicist.A comma. A literalist takes everything literally. A kleptomaniac takes everything, literally.
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: Did you hear Bruce Springsteen changed the lyrics to one of his songs? What’s he going to change next—his hair? His clothes? His face?
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: What do you call a beehive without an exit? Un-bee-lievable.
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: What has five toes and isn't your foot? My foot.
+2025-01-20 11:42:37.628 | INFO     | __main__:process_message:62 - Processing message: I thought about going on an all-almond diet. But that's just nuts.
+2025-01-20 11:42:37.709 | INFO     | __main__:generate_messages:79 - Dad joke: Why do nurses like red crayons? Sometimes they have to draw blood.
+2025-01-20 11:42:37.710 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why do nurses like red crayons? Sometimes they have to draw blood.
+2025-01-20 11:42:37.716 | INFO     | __main__:process_message:62 - Processing message: Why do nurses like red crayons? Sometimes they have to draw blood.
+2025-01-20 11:42:38.710 | INFO     | __main__:generate_messages:79 - Dad joke: What did the baby corn say to the mama corn? Where's popcorn?
+2025-01-20 11:42:38.711 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What did the baby corn say to the mama corn? Where's popcorn?
+2025-01-20 11:42:38.717 | INFO     | __main__:process_message:62 - Processing message: What did the baby corn say to the mama corn? Where's popcorn?
+2025-01-20 11:42:39.711 | INFO     | __main__:generate_messages:79 - Dad joke: A steak pun is a rare medium well done.
+2025-01-20 11:42:39.712 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': A steak pun is a rare medium well done.
+2025-01-20 11:42:39.717 | INFO     | __main__:process_message:62 - Processing message: A steak pun is a rare medium well done.
+2025-01-20 11:42:40.712 | INFO     | __main__:generate_messages:79 - Dad joke: What’s green and has wheels? Grass. I lied about the wheels.
+2025-01-20 11:42:40.713 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What’s green and has wheels? Grass. I lied about the wheels.
+2025-01-20 11:42:40.717 | INFO     | __main__:process_message:62 - Processing message: What’s green and has wheels? Grass. I lied about the wheels.
+2025-01-20 11:42:41.714 | INFO     | __main__:generate_messages:79 - Dad joke: How do you fix a pumpkin with a hole in it? With a pumpkin patch!
+2025-01-20 11:42:41.714 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': How do you fix a pumpkin with a hole in it? With a pumpkin patch!
+2025-01-20 11:42:41.720 | INFO     | __main__:process_message:62 - Processing message: How do you fix a pumpkin with a hole in it? With a pumpkin patch!
+2025-01-20 11:42:42.715 | INFO     | __main__:generate_messages:79 - Dad joke: An apple a day keeps the doctor away. At least it does if you throw it hard enough.
+2025-01-20 11:42:42.716 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': An apple a day keeps the doctor away. At least it does if you throw it hard enough.
+2025-01-20 11:42:42.721 | INFO     | __main__:process_message:62 - Processing message: An apple a day keeps the doctor away. At least it does if you throw it hard enough.
+2025-01-20 11:42:43.717 | INFO     | __main__:generate_messages:79 - Dad joke: I don't trust stairs. They're always up to something.
+2025-01-20 11:42:43.717 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I don't trust stairs. They're always up to something.
+2025-01-20 11:42:43.722 | INFO     | __main__:process_message:62 - Processing message: I don't trust stairs. They're always up to something.
+2025-01-20 11:42:44.718 | INFO     | __main__:generate_messages:79 - Dad joke: “Did you hear that I’m reading a book about anti-gravity? It’s impossible to put down.”
+2025-01-20 11:42:44.718 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': “Did you hear that I’m reading a book about anti-gravity? It’s impossible to put down.”
+2025-01-20 11:42:44.723 | INFO     | __main__:process_message:62 - Processing message: “Did you hear that I’m reading a book about anti-gravity? It’s impossible to put down.”
+2025-01-20 11:42:45.720 | INFO     | __main__:generate_messages:79 - Dad joke: Where do crayons go on vacation? Color-ado.
+2025-01-20 11:42:45.720 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Where do crayons go on vacation? Color-ado.
+2025-01-20 11:42:45.726 | INFO     | __main__:process_message:62 - Processing message: Where do crayons go on vacation? Color-ado.
+2025-01-20 11:42:46.721 | INFO     | __main__:generate_messages:79 - Dad joke: What did the caretaker say when they jumped out of the store cupboard? “Supplies!”
+2025-01-20 11:42:46.722 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What did the caretaker say when they jumped out of the store cupboard? “Supplies!”
+2025-01-20 11:42:46.726 | INFO     | __main__:process_message:62 - Processing message: What did the caretaker say when they jumped out of the store cupboard? “Supplies!”
+2025-01-20 11:42:47.722 | INFO     | __main__:generate_messages:79 - Dad joke: I hate Velcro. It's a rip off.
+2025-01-20 11:42:47.723 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I hate Velcro. It's a rip off.
+2025-01-20 11:42:47.727 | INFO     | __main__:process_message:62 - Processing message: I hate Velcro. It's a rip off.
+2025-01-20 11:42:48.724 | INFO     | __main__:generate_messages:79 - Dad joke: Which bear is the most condescending? A pan-duh.
+2025-01-20 11:42:48.724 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Which bear is the most condescending? A pan-duh.
+2025-01-20 11:42:48.730 | INFO     | __main__:process_message:62 - Processing message: Which bear is the most condescending? A pan-duh.
+2025-01-20 11:42:49.726 | INFO     | __main__:generate_messages:79 - Dad joke: I love dad jokes, but I don't have kids, which makes me a Faux Pa.
+2025-01-20 11:42:49.726 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I love dad jokes, but I don't have kids, which makes me a Faux Pa.
+2025-01-20 11:42:49.731 | INFO     | __main__:process_message:62 - Processing message: I love dad jokes, but I don't have kids, which makes me a Faux Pa.
+2025-01-20 11:42:50.727 | INFO     | __main__:generate_messages:79 - Dad joke: Did you hear about the kidnapping at school. It's ok he woke up.
+2025-01-20 11:42:50.728 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Did you hear about the kidnapping at school. It's ok he woke up.
+2025-01-20 11:42:50.733 | INFO     | __main__:process_message:62 - Processing message: Did you hear about the kidnapping at school. It's ok he woke up.
+2025-01-20 11:42:51.728 | INFO     | __main__:generate_messages:79 - Dad joke: RIP boiling water, you will be mist.
+2025-01-20 11:42:51.729 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': RIP boiling water, you will be mist.
+2025-01-20 11:42:51.734 | INFO     | __main__:process_message:62 - Processing message: RIP boiling water, you will be mist.
+2025-01-20 11:42:52.729 | INFO     | __main__:generate_messages:79 - Dad joke: What are the strongest days of the week? Saturday and Sunday. All the others are weekdays.
+2025-01-20 11:42:52.730 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What are the strongest days of the week? Saturday and Sunday. All the others are weekdays.
+2025-01-20 11:42:52.735 | INFO     | __main__:process_message:62 - Processing message: What are the strongest days of the week? Saturday and Sunday. All the others are weekdays.
+2025-01-20 11:42:53.731 | INFO     | __main__:generate_messages:79 - Dad joke: Why do cows have bells? Because their horns don’t work.
+2025-01-20 11:42:53.731 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why do cows have bells? Because their horns don’t work.
+2025-01-20 11:42:53.737 | INFO     | __main__:process_message:62 - Processing message: Why do cows have bells? Because their horns don’t work.
+2025-01-20 11:42:54.732 | INFO     | __main__:generate_messages:79 - Dad joke: A steak pun is a rare medium well done.
+2025-01-20 11:42:54.733 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': A steak pun is a rare medium well done.
+2025-01-20 11:42:54.740 | INFO     | __main__:process_message:62 - Processing message: A steak pun is a rare medium well done.
+2025-01-20 11:42:55.734 | INFO     | __main__:generate_messages:79 - Dad joke: Where do you learn to make ice cream? At sundae school!
+2025-01-20 11:42:55.734 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Where do you learn to make ice cream? At sundae school!
+2025-01-20 11:42:55.840 | INFO     | __main__:process_message:62 - Processing message: Where do you learn to make ice cream? At sundae school!
+2025-01-20 11:42:56.735 | INFO     | __main__:generate_messages:79 - Dad joke: What's a lawyer's favorite drink? Subpoena colada.
+2025-01-20 11:42:56.735 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What's a lawyer's favorite drink? Subpoena colada.
+2025-01-20 11:42:56.737 | INFO     | __main__:process_message:62 - Processing message: What's a lawyer's favorite drink? Subpoena colada.
+2025-01-20 11:42:57.735 | INFO     | __main__:generate_messages:79 - Dad joke: Do you know how many people are dead at a cemetery? All of them.
+2025-01-20 11:42:57.736 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Do you know how many people are dead at a cemetery? All of them.
+2025-01-20 11:42:57.742 | INFO     | __main__:process_message:62 - Processing message: Do you know how many people are dead at a cemetery? All of them.
+2025-01-20 11:42:58.736 | INFO     | __main__:generate_messages:79 - Dad joke: How do you make a tissue dance? Put a little boogie in it!
+2025-01-20 11:42:58.737 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': How do you make a tissue dance? Put a little boogie in it!
+2025-01-20 11:42:58.741 | INFO     | __main__:process_message:62 - Processing message: How do you make a tissue dance? Put a little boogie in it!
+2025-01-20 11:42:59.737 | INFO     | __main__:generate_messages:79 - Dad joke: What do you call a sheep that knows karate? A lamb chop.
+2025-01-20 11:42:59.738 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do you call a sheep that knows karate? A lamb chop.
+2025-01-20 11:42:59.744 | INFO     | __main__:process_message:62 - Processing message: What do you call a sheep that knows karate? A lamb chop.
+2025-01-20 11:43:00.738 | INFO     | __main__:generate_messages:79 - Dad joke: Did you hear about the girl who quit her job at the doughnut factory? She was fed up with the hole business.
+2025-01-20 11:43:00.739 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Did you hear about the girl who quit her job at the doughnut factory? She was fed up with the hole business.
+2025-01-20 11:43:00.744 | INFO     | __main__:process_message:62 - Processing message: Did you hear about the girl who quit her job at the doughnut factory? She was fed up with the hole business.
+2025-01-20 11:43:01.740 | INFO     | __main__:generate_messages:79 - Dad joke: I used to be a banker, but I lost interest.
+2025-01-20 11:43:01.740 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I used to be a banker, but I lost interest.
+2025-01-20 11:43:01.743 | INFO     | __main__:process_message:62 - Processing message: I used to be a banker, but I lost interest.
+2025-01-20 11:43:02.740 | INFO     | __main__:generate_messages:79 - Dad joke: People in Athens rarely get up before sunrise. Dawn is tough on Greece.
+2025-01-20 11:43:02.741 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': People in Athens rarely get up before sunrise. Dawn is tough on Greece.
+2025-01-20 11:43:02.746 | INFO     | __main__:process_message:62 - Processing message: People in Athens rarely get up before sunrise. Dawn is tough on Greece.
+2025-01-20 11:43:03.741 | INFO     | __main__:generate_messages:79 - Dad joke: What’s more unbelievable than a talking dog? A spelling bee.
+2025-01-20 11:43:03.742 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What’s more unbelievable than a talking dog? A spelling bee.
+2025-01-20 11:43:03.746 | INFO     | __main__:process_message:62 - Processing message: What’s more unbelievable than a talking dog? A spelling bee.
+2025-01-20 11:43:04.743 | INFO     | __main__:generate_messages:79 - Dad joke: Have you heard of a music group called Cellophane? They mainly wrap.
+2025-01-20 11:43:04.743 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Have you heard of a music group called Cellophane? They mainly wrap.
+2025-01-20 11:43:04.747 | INFO     | __main__:process_message:62 - Processing message: Have you heard of a music group called Cellophane? They mainly wrap.
+2025-01-20 11:43:05.745 | INFO     | __main__:generate_messages:79 - Dad joke: My wife left a note on the fridge that said, “This isn't working.” I’m not sure what she’s talking about. I opened the fridge door and it’s working fine!
+2025-01-20 11:43:05.745 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': My wife left a note on the fridge that said, “This isn't working.” I’m not sure what she’s talking about. I opened the fridge door and it’s working fine!
+2025-01-20 11:43:05.750 | INFO     | __main__:process_message:62 - Processing message: My wife left a note on the fridge that said, “This isn't working.” I’m not sure what she’s talking about. I opened the fridge door and it’s working fine!
+2025-01-20 11:43:06.746 | INFO     | __main__:generate_messages:79 - Dad joke: Why'd the fisherman order the halibut? Just for the halibut!
+2025-01-20 11:43:06.747 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why'd the fisherman order the halibut? Just for the halibut!
+2025-01-20 11:43:06.751 | INFO     | __main__:process_message:62 - Processing message: Why'd the fisherman order the halibut? Just for the halibut!
+2025-01-20 11:43:07.747 | INFO     | __main__:generate_messages:79 - Dad joke: What did the evil chicken lay? Deviled eggs.
+2025-01-20 11:43:07.747 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What did the evil chicken lay? Deviled eggs.
+2025-01-20 11:43:07.749 | INFO     | __main__:process_message:62 - Processing message: What did the evil chicken lay? Deviled eggs.
+2025-01-20 11:43:08.747 | INFO     | __main__:generate_messages:79 - Dad joke: I have a joke about paper, but it’s tearable.
+2025-01-20 11:43:08.748 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I have a joke about paper, but it’s tearable.
+2025-01-20 11:43:08.754 | INFO     | __main__:process_message:62 - Processing message: I have a joke about paper, but it’s tearable.
+2025-01-20 11:43:09.748 | INFO     | __main__:generate_messages:79 - Dad joke: Who were the greenest Presidents in US history? The bushes.
+2025-01-20 11:43:09.749 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Who were the greenest Presidents in US history? The bushes.
+2025-01-20 11:43:09.754 | INFO     | __main__:process_message:62 - Processing message: Who were the greenest Presidents in US history? The bushes.
+2025-01-20 11:43:10.749 | INFO     | __main__:generate_messages:79 - Dad joke: “I can tolerate algebra, maybe even a little calculus, but geometry is where I draw the line.”
+2025-01-20 11:43:10.750 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': “I can tolerate algebra, maybe even a little calculus, but geometry is where I draw the line.”
+2025-01-20 11:43:10.753 | INFO     | __main__:process_message:62 - Processing message: “I can tolerate algebra, maybe even a little calculus, but geometry is where I draw the line.”
+2025-01-20 11:43:11.750 | INFO     | __main__:generate_messages:79 - Dad joke: Why couldn't the bicycle stand up by itself? It was two tired.
+2025-01-20 11:43:11.750 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why couldn't the bicycle stand up by itself? It was two tired.
+2025-01-20 11:43:11.756 | INFO     | __main__:process_message:62 - Processing message: Why couldn't the bicycle stand up by itself? It was two tired.
+2025-01-20 11:43:12.751 | INFO     | __main__:generate_messages:79 - Dad joke: "I'll call you later." Don't call me later, call me Dad.
+2025-01-20 11:43:12.751 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': "I'll call you later." Don't call me later, call me Dad.
+2025-01-20 11:43:12.753 | INFO     | __main__:process_message:62 - Processing message: "I'll call you later." Don't call me later, call me Dad.
+2025-01-20 11:43:13.751 | INFO     | __main__:generate_messages:79 - Dad joke: Why did the baseball player get arrested? He stole third base.
+2025-01-20 11:43:13.751 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why did the baseball player get arrested? He stole third base.
+2025-01-20 11:43:13.753 | INFO     | __main__:process_message:62 - Processing message: Why did the baseball player get arrested? He stole third base.
+2025-01-20 11:43:14.752 | INFO     | __main__:generate_messages:79 - Dad joke: My wife left a note on the fridge that said, “This isn't working.” I’m not sure what she’s talking about. I opened the fridge door and it’s working fine!
+2025-01-20 11:43:14.753 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': My wife left a note on the fridge that said, “This isn't working.” I’m not sure what she’s talking about. I opened the fridge door and it’s working fine!
+2025-01-20 11:43:14.759 | INFO     | __main__:process_message:62 - Processing message: My wife left a note on the fridge that said, “This isn't working.” I’m not sure what she’s talking about. I opened the fridge door and it’s working fine!
+2025-01-20 11:43:15.754 | INFO     | __main__:generate_messages:79 - Dad joke: How many apples grow on a tree? All of them.
+2025-01-20 11:43:15.755 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': How many apples grow on a tree? All of them.
+2025-01-20 11:43:15.757 | INFO     | __main__:process_message:62 - Processing message: How many apples grow on a tree? All of them.
+2025-01-20 11:43:16.755 | INFO     | __main__:generate_messages:79 - Dad joke: What do you call a baby monkey? A chimp off the old block.
+2025-01-20 11:43:16.756 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do you call a baby monkey? A chimp off the old block.
+2025-01-20 11:43:16.760 | INFO     | __main__:process_message:62 - Processing message: What do you call a baby monkey? A chimp off the old block.
+2025-01-20 11:43:17.757 | INFO     | __main__:generate_messages:79 - Dad joke: Today I’m attaching a light to the ceiling, but I’m afraid I’ll probably screw it up.
+2025-01-20 11:43:17.757 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Today I’m attaching a light to the ceiling, but I’m afraid I’ll probably screw it up.
+2025-01-20 11:43:17.759 | INFO     | __main__:process_message:62 - Processing message: Today I’m attaching a light to the ceiling, but I’m afraid I’ll probably screw it up.
+2025-01-20 11:43:18.758 | INFO     | __main__:generate_messages:79 - Dad joke: What did the nose tell the finger? Stop picking on me!
+2025-01-20 11:43:18.758 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What did the nose tell the finger? Stop picking on me!
+2025-01-20 11:43:18.764 | INFO     | __main__:process_message:62 - Processing message: What did the nose tell the finger? Stop picking on me!
+2025-01-20 11:43:19.759 | INFO     | __main__:generate_messages:79 - Dad joke: Am I the only man my wife has ever dated? Unfortunately yes, she said the others were all nines or tens!
+2025-01-20 11:43:19.760 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Am I the only man my wife has ever dated? Unfortunately yes, she said the others were all nines or tens!
+2025-01-20 11:43:19.765 | INFO     | __main__:process_message:62 - Processing message: Am I the only man my wife has ever dated? Unfortunately yes, she said the others were all nines or tens!
+2025-01-20 11:43:20.761 | INFO     | __main__:generate_messages:79 - Dad joke: How can you tell an alligator from a crocodile? By paying attention to whether the animal will see you later, or after a while.
+2025-01-20 11:43:20.762 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': How can you tell an alligator from a crocodile? By paying attention to whether the animal will see you later, or after a while.
+2025-01-20 11:43:20.766 | INFO     | __main__:process_message:62 - Processing message: How can you tell an alligator from a crocodile? By paying attention to whether the animal will see you later, or after a while.
+2025-01-20 11:43:21.762 | INFO     | __main__:generate_messages:79 - Dad joke: Two peanuts went walking down the street. One was assaulted.
+2025-01-20 11:43:21.763 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Two peanuts went walking down the street. One was assaulted.
+2025-01-20 11:43:21.767 | INFO     | __main__:process_message:62 - Processing message: Two peanuts went walking down the street. One was assaulted.
+2025-01-20 11:43:22.763 | INFO     | __main__:generate_messages:79 - Dad joke: I have a joke about kites, but it would just sail over your head.
+2025-01-20 11:43:22.764 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I have a joke about kites, but it would just sail over your head.
+2025-01-20 11:43:22.768 | INFO     | __main__:process_message:62 - Processing message: I have a joke about kites, but it would just sail over your head.
+2025-01-20 11:43:23.764 | INFO     | __main__:generate_messages:79 - Dad joke: My cat was just sick on the carpet. I don't think he's feline well.
+2025-01-20 11:43:23.764 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': My cat was just sick on the carpet. I don't think he's feline well.
+2025-01-20 11:43:23.769 | INFO     | __main__:process_message:62 - Processing message: My cat was just sick on the carpet. I don't think he's feline well.
+2025-01-20 11:43:24.765 | INFO     | __main__:generate_messages:79 - Dad joke: My boss asked me why I only get sick on work days. I said it must be my weekend immune system.
+2025-01-20 11:43:24.765 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': My boss asked me why I only get sick on work days. I said it must be my weekend immune system.
+2025-01-20 11:43:24.770 | INFO     | __main__:process_message:62 - Processing message: My boss asked me why I only get sick on work days. I said it must be my weekend immune system.
+2025-01-20 11:43:25.766 | INFO     | __main__:generate_messages:79 - Dad joke: After an unsuccessful harvest, why did the farmer decide to try a career in music? Because he had a ton of sick beets.
+2025-01-20 11:43:25.767 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': After an unsuccessful harvest, why did the farmer decide to try a career in music? Because he had a ton of sick beets.
+2025-01-20 11:43:25.772 | INFO     | __main__:process_message:62 - Processing message: After an unsuccessful harvest, why did the farmer decide to try a career in music? Because he had a ton of sick beets.
+2025-01-20 11:43:26.767 | INFO     | __main__:generate_messages:79 - Dad joke: When a toddler reaches the "why?" stage, it's like opening a bottle of champagne—once it's uncorked, there's no going back.
+2025-01-20 11:43:26.768 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': When a toddler reaches the "why?" stage, it's like opening a bottle of champagne—once it's uncorked, there's no going back.
+2025-01-20 11:43:26.773 | INFO     | __main__:process_message:62 - Processing message: When a toddler reaches the "why?" stage, it's like opening a bottle of champagne—once it's uncorked, there's no going back.
+2025-01-20 11:43:27.768 | INFO     | __main__:generate_messages:79 - Dad joke: Did you know the first French fries weren't actually cooked in France? They were cooked in Greece.
+2025-01-20 11:43:27.768 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Did you know the first French fries weren't actually cooked in France? They were cooked in Greece.
+2025-01-20 11:43:27.774 | INFO     | __main__:process_message:62 - Processing message: Did you know the first French fries weren't actually cooked in France? They were cooked in Greece.
+2025-01-20 11:43:28.769 | INFO     | __main__:generate_messages:79 - Dad joke: I wish my gray hair started in Las Vegas because what happens in Vegas, stays in Vegas.
+2025-01-20 11:43:28.769 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I wish my gray hair started in Las Vegas because what happens in Vegas, stays in Vegas.
+2025-01-20 11:43:28.774 | INFO     | __main__:process_message:62 - Processing message: I wish my gray hair started in Las Vegas because what happens in Vegas, stays in Vegas.
+2025-01-20 11:43:29.770 | INFO     | __main__:generate_messages:79 - Dad joke: I have a joke about a roof, but it would just go over your head.
+2025-01-20 11:43:29.770 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I have a joke about a roof, but it would just go over your head.
+2025-01-20 11:43:29.774 | INFO     | __main__:process_message:62 - Processing message: I have a joke about a roof, but it would just go over your head.
+2025-01-20 11:43:30.770 | INFO     | __main__:generate_messages:79 - Dad joke: Why are fish so easy to weigh? Because they have their own set of scales.
+2025-01-20 11:43:30.771 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why are fish so easy to weigh? Because they have their own set of scales.
+2025-01-20 11:43:30.776 | INFO     | __main__:process_message:62 - Processing message: Why are fish so easy to weigh? Because they have their own set of scales.
+2025-01-20 11:43:31.771 | INFO     | __main__:generate_messages:79 - Dad joke: I used to play piano by ear, but now I use my hands.
+2025-01-20 11:43:31.772 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I used to play piano by ear, but now I use my hands.
+2025-01-20 11:43:31.777 | INFO     | __main__:process_message:62 - Processing message: I used to play piano by ear, but now I use my hands.
+2025-01-20 11:43:32.772 | INFO     | __main__:generate_messages:79 - Dad joke: Why was the broom late? It over-swept.
+2025-01-20 11:43:32.773 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why was the broom late? It over-swept.
+2025-01-20 11:43:32.777 | INFO     | __main__:process_message:62 - Processing message: Why was the broom late? It over-swept.
+2025-01-20 11:43:33.774 | INFO     | __main__:generate_messages:79 - Dad joke: I finally watched that documentary on clocks. It was about time.
+2025-01-20 11:43:33.774 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I finally watched that documentary on clocks. It was about time.
+2025-01-20 11:43:33.779 | INFO     | __main__:process_message:62 - Processing message: I finally watched that documentary on clocks. It was about time.
+2025-01-20 11:43:34.775 | INFO     | __main__:generate_messages:79 - Dad joke: Mom asked me to put ketchup on the grocery list. Now I can't see anything.
+2025-01-20 11:43:34.776 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Mom asked me to put ketchup on the grocery list. Now I can't see anything.
+2025-01-20 11:43:34.779 | INFO     | __main__:process_message:62 - Processing message: Mom asked me to put ketchup on the grocery list. Now I can't see anything.
+2025-01-20 11:43:35.777 | INFO     | __main__:generate_messages:79 - Dad joke: A cop started crying while he was writing me a ticket. I asked him why and he said, "It's a moving violation."
+2025-01-20 11:43:35.777 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': A cop started crying while he was writing me a ticket. I asked him why and he said, "It's a moving violation."
+2025-01-20 11:43:35.782 | INFO     | __main__:process_message:62 - Processing message: A cop started crying while he was writing me a ticket. I asked him why and he said, "It's a moving violation."
+2025-01-20 11:43:36.778 | INFO     | __main__:generate_messages:79 - Dad joke: Clothes, but no cigar.
+2025-01-20 11:43:36.778 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Clothes, but no cigar.
+2025-01-20 11:43:36.783 | INFO     | __main__:process_message:62 - Processing message: Clothes, but no cigar.
+2025-01-20 11:43:37.779 | INFO     | __main__:generate_messages:79 - Dad joke: What do you call two dogs breathing heavily? A pair of pants
+2025-01-20 11:43:37.780 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do you call two dogs breathing heavily? A pair of pants
+2025-01-20 11:43:37.784 | INFO     | __main__:process_message:62 - Processing message: What do you call two dogs breathing heavily? A pair of pants
+2025-01-20 11:43:38.780 | INFO     | __main__:generate_messages:79 - Dad joke: Japan, Korea, and China go trick or treating. Japan and Korea receive candy while China gets opium.Britain was at the door.Credit to u/TheSnipenieer for the inspirational post.
+2025-01-20 11:43:38.781 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Japan, Korea, and China go trick or treating. Japan and Korea receive candy while China gets opium.Britain was at the door.Credit to u/TheSnipenieer for the inspirational post.
+2025-01-20 11:43:38.786 | INFO     | __main__:process_message:62 - Processing message: Japan, Korea, and China go trick or treating. Japan and Korea receive candy while China gets opium.Britain was at the door.Credit to u/TheSnipenieer for the inspirational post.
+2025-01-20 11:43:39.781 | INFO     | __main__:generate_messages:79 - Dad joke: Good thing I had a CVS receipt in my wallet... The men’s room was out of toilet paper.
+2025-01-20 11:43:39.782 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Good thing I had a CVS receipt in my wallet... The men’s room was out of toilet paper.
+2025-01-20 11:43:39.786 | INFO     | __main__:process_message:62 - Processing message: Good thing I had a CVS receipt in my wallet... The men’s room was out of toilet paper.
+2025-01-20 11:43:40.783 | INFO     | __main__:generate_messages:79 - Dad joke: What kind of cars do ghosts drive? Boo-gattis.
+2025-01-20 11:43:40.783 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What kind of cars do ghosts drive? Boo-gattis.
+2025-01-20 11:43:40.788 | INFO     | __main__:process_message:62 - Processing message: What kind of cars do ghosts drive? Boo-gattis.
+2025-01-20 11:43:41.784 | INFO     | __main__:generate_messages:79 - Dad joke: I asked our security specialist, “How did the hackers get away?” Miffed, he shrugged and answered, “No idea. They ransomware.”
+2025-01-20 11:43:41.784 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I asked our security specialist, “How did the hackers get away?” Miffed, he shrugged and answered, “No idea. They ransomware.”
+2025-01-20 11:43:41.789 | INFO     | __main__:process_message:62 - Processing message: I asked our security specialist, “How did the hackers get away?” Miffed, he shrugged and answered, “No idea. They ransomware.”
+2025-01-20 11:43:42.784 | INFO     | __main__:generate_messages:79 - Dad joke: Can you stop staring at my gf when she's breastfeeding at the mall???? When I'm thirsty I'm thirsty.
+2025-01-20 11:43:42.785 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Can you stop staring at my gf when she's breastfeeding at the mall???? When I'm thirsty I'm thirsty.
+2025-01-20 11:43:42.790 | INFO     | __main__:process_message:62 - Processing message: Can you stop staring at my gf when she's breastfeeding at the mall???? When I'm thirsty I'm thirsty.
+2025-01-20 11:43:43.785 | INFO     | __main__:generate_messages:79 - Dad joke: My son asked me: "would you sell me for a million dollars?!?" I said "never in a million billion years!!"He asked "what about 2 million"I said "are you kidding me?!? In this economy? Sorry little man"
+2025-01-20 11:43:43.786 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': My son asked me: "would you sell me for a million dollars?!?" I said "never in a million billion years!!"He asked "what about 2 million"I said "are you kidding me?!? In this economy? Sorry little man"
+2025-01-20 11:43:43.789 | INFO     | __main__:process_message:62 - Processing message: My son asked me: "would you sell me for a million dollars?!?" I said "never in a million billion years!!"He asked "what about 2 million"I said "are you kidding me?!? In this economy? Sorry little man"
+2025-01-20 11:43:44.786 | INFO     | __main__:generate_messages:79 - Dad joke: Why do squirrels live in trees? Because they’re fucking nuts!
+2025-01-20 11:43:44.787 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why do squirrels live in trees? Because they’re fucking nuts!
+2025-01-20 11:43:44.792 | INFO     | __main__:process_message:62 - Processing message: Why do squirrels live in trees? Because they’re fucking nuts!
+2025-01-20 11:43:45.788 | INFO     | __main__:generate_messages:79 - Dad joke: I’m glad # is not called pound anymore. Otherwise, the #metoo movement would be sending the wrong message.
+2025-01-20 11:43:45.789 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I’m glad # is not called pound anymore. Otherwise, the #metoo movement would be sending the wrong message.
+2025-01-20 11:43:45.793 | INFO     | __main__:process_message:62 - Processing message: I’m glad # is not called pound anymore. Otherwise, the #metoo movement would be sending the wrong message.
+2025-01-20 11:43:46.790 | INFO     | __main__:generate_messages:79 - Dad joke: Why did the horny rebellion only last two minutes? Because everyone came
+2025-01-20 11:43:46.790 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why did the horny rebellion only last two minutes? Because everyone came
+2025-01-20 11:43:46.795 | INFO     | __main__:process_message:62 - Processing message: Why did the horny rebellion only last two minutes? Because everyone came
+2025-01-20 11:43:47.790 | INFO     | __main__:generate_messages:79 - Dad joke: Just thought of one but maybe borrowed. Always wondered why there's a lot indian doctors in gastroenterology. Let me go ask my friends Pooja and Harshit.
+2025-01-20 11:43:47.791 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Just thought of one but maybe borrowed. Always wondered why there's a lot indian doctors in gastroenterology. Let me go ask my friends Pooja and Harshit.
+2025-01-20 11:43:47.796 | INFO     | __main__:process_message:62 - Processing message: Just thought of one but maybe borrowed. Always wondered why there's a lot indian doctors in gastroenterology. Let me go ask my friends Pooja and Harshit.
+2025-01-20 11:43:48.792 | INFO     | __main__:generate_messages:79 - Dad joke: What’s a pirate’s favorite letter? Me: What’s a pirates favorite letter?Unwitting person just living their life: R?Me: R’s what you’d think but it’s the C they love!
+2025-01-20 11:43:48.793 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What’s a pirate’s favorite letter? Me: What’s a pirates favorite letter?Unwitting person just living their life: R?Me: R’s what you’d think but it’s the C they love!
+2025-01-20 11:43:48.797 | INFO     | __main__:process_message:62 - Processing message: What’s a pirate’s favorite letter? Me: What’s a pirates favorite letter?Unwitting person just living their life: R?Me: R’s what you’d think but it’s the C they love!
+2025-01-20 11:43:49.793 | INFO     | __main__:generate_messages:79 - Dad joke: When I die I want to be cremated and my ashes spread on a beach. Because even when I'm dead, I still want to get into lady's pants.
+2025-01-20 11:43:49.793 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': When I die I want to be cremated and my ashes spread on a beach. Because even when I'm dead, I still want to get into lady's pants.
+2025-01-20 11:43:49.795 | INFO     | __main__:process_message:62 - Processing message: When I die I want to be cremated and my ashes spread on a beach. Because even when I'm dead, I still want to get into lady's pants.
+2025-01-20 11:43:50.794 | INFO     | __main__:generate_messages:79 - Dad joke: Three blondes are walking when they come across tracks. The first blondes says “I know these, they’re deer tracks!” The second says “No! They’re bear tracks” Finally the third speaks up and says “Your both wrong! They’re obviously fox trails!” They were still arguing when the train hit them.
+2025-01-20 11:43:50.794 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Three blondes are walking when they come across tracks. The first blondes says “I know these, they’re deer tracks!” The second says “No! They’re bear tracks” Finally the third speaks up and says “Your both wrong! They’re obviously fox trails!” They were still arguing when the train hit them.
+2025-01-20 11:43:50.799 | INFO     | __main__:process_message:62 - Processing message: Three blondes are walking when they come across tracks. The first blondes says “I know these, they’re deer tracks!” The second says “No! They’re bear tracks” Finally the third speaks up and says “Your both wrong! They’re obviously fox trails!” They were still arguing when the train hit them.
+2025-01-20 11:43:51.795 | INFO     | __main__:generate_messages:79 - Dad joke: Why do I always bring 2 pairs of pants when I go golfing? Because I always get a hole in one
+2025-01-20 11:43:51.795 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why do I always bring 2 pairs of pants when I go golfing? Because I always get a hole in one
+2025-01-20 11:43:51.800 | INFO     | __main__:process_message:62 - Processing message: Why do I always bring 2 pairs of pants when I go golfing? Because I always get a hole in one
+2025-01-20 11:43:52.796 | INFO     | __main__:generate_messages:79 - Dad joke: What do you call an Italian transvestite? A grease trap.
+2025-01-20 11:43:52.797 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do you call an Italian transvestite? A grease trap.
+2025-01-20 11:43:52.801 | INFO     | __main__:process_message:62 - Processing message: What do you call an Italian transvestite? A grease trap.
+2025-01-20 11:43:53.798 | INFO     | __main__:generate_messages:79 - Dad joke: Son: Dad, why is destruction a form of creation? Dad: Well son, you see, I destroyed your mom's pussy to create your ass.
+2025-01-20 11:43:53.798 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Son: Dad, why is destruction a form of creation? Dad: Well son, you see, I destroyed your mom's pussy to create your ass.
+2025-01-20 11:43:53.803 | INFO     | __main__:process_message:62 - Processing message: Son: Dad, why is destruction a form of creation? Dad: Well son, you see, I destroyed your mom's pussy to create your ass.
+2025-01-20 11:43:54.799 | INFO     | __main__:generate_messages:79 - Dad joke: Why do we tell actors to "break a leg"? Because every play has a cast.
+2025-01-20 11:43:54.800 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why do we tell actors to "break a leg"? Because every play has a cast.
+2025-01-20 11:43:54.804 | INFO     | __main__:process_message:62 - Processing message: Why do we tell actors to "break a leg"? Because every play has a cast.
+2025-01-20 11:43:55.801 | INFO     | __main__:generate_messages:79 - Dad joke: What did Silver say when it saw Gold walking across the street? Au!
+2025-01-20 11:43:55.801 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What did Silver say when it saw Gold walking across the street? Au!
+2025-01-20 11:43:55.805 | INFO     | __main__:process_message:62 - Processing message: What did Silver say when it saw Gold walking across the street? Au!
+2025-01-20 11:43:56.802 | INFO     | __main__:generate_messages:79 - Dad joke: Owls: I do not know What, Where, When, or Why I only know who
+2025-01-20 11:43:56.803 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Owls: I do not know What, Where, When, or Why I only know who
+2025-01-20 11:43:56.807 | INFO     | __main__:process_message:62 - Processing message: Owls: I do not know What, Where, When, or Why I only know who
+2025-01-20 11:43:57.803 | INFO     | __main__:generate_messages:79 - Dad joke: After it was determined that dogs could not transmit COVID-19 to humans, the world health organization deemed that all companion pets could be let out of quarantine We really should have seen this coming, they told us WHO let the dogs out for years
+2025-01-20 11:43:57.804 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': After it was determined that dogs could not transmit COVID-19 to humans, the world health organization deemed that all companion pets could be let out of quarantine We really should have seen this coming, they told us WHO let the dogs out for years
+2025-01-20 11:43:57.808 | INFO     | __main__:process_message:62 - Processing message: After it was determined that dogs could not transmit COVID-19 to humans, the world health organization deemed that all companion pets could be let out of quarantine We really should have seen this coming, they told us WHO let the dogs out for years
+2025-01-20 11:43:58.804 | INFO     | __main__:generate_messages:79 - Dad joke: What did the dollar say to the yen? You are so invaluable, it doesn’t even make cents!
+2025-01-20 11:43:58.805 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What did the dollar say to the yen? You are so invaluable, it doesn’t even make cents!
+2025-01-20 11:43:58.809 | INFO     | __main__:process_message:62 - Processing message: What did the dollar say to the yen? You are so invaluable, it doesn’t even make cents!
+2025-01-20 11:43:59.806 | INFO     | __main__:generate_messages:79 - Dad joke: My neighbor’s yard is so vibrant and colorful. Good thing I switched his weed killer to MiracleGro.
+2025-01-20 11:43:59.807 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': My neighbor’s yard is so vibrant and colorful. Good thing I switched his weed killer to MiracleGro.
+2025-01-20 11:43:59.812 | INFO     | __main__:process_message:62 - Processing message: My neighbor’s yard is so vibrant and colorful. Good thing I switched his weed killer to MiracleGro.
+2025-01-20 11:44:00.809 | INFO     | __main__:generate_messages:79 - Dad joke: My Grandmother found and flushed my weed so, I hid her weelchair...... Now neither of us are rolling
+2025-01-20 11:44:00.809 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': My Grandmother found and flushed my weed so, I hid her weelchair...... Now neither of us are rolling
+2025-01-20 11:44:00.814 | INFO     | __main__:process_message:62 - Processing message: My Grandmother found and flushed my weed so, I hid her weelchair...... Now neither of us are rolling
+2025-01-20 11:44:01.811 | INFO     | __main__:generate_messages:79 - Dad joke: I have a masturbation addiction But I'm beating it
+2025-01-20 11:44:01.812 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I have a masturbation addiction But I'm beating it
+2025-01-20 11:44:01.816 | INFO     | __main__:process_message:62 - Processing message: I have a masturbation addiction But I'm beating it
+2025-01-20 11:44:02.813 | INFO     | __main__:generate_messages:79 - Dad joke: A tough old rancher once told his grandson that the secret to a long life was to sprinkle a little gunpowder on his oatmeal every morning. The grandson did this religiously, and he lived to be 97. When he died, he left behind 14 children, 27 grandchildren, 34 great-grandchildren and a 15-foot hole in the wall of the crematorium.
+2025-01-20 11:44:02.814 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': A tough old rancher once told his grandson that the secret to a long life was to sprinkle a little gunpowder on his oatmeal every morning. The grandson did this religiously, and he lived to be 97. When he died, he left behind 14 children, 27 grandchildren, 34 great-grandchildren and a 15-foot hole in the wall of the crematorium.
+2025-01-20 11:44:02.818 | INFO     | __main__:process_message:62 - Processing message: A tough old rancher once told his grandson that the secret to a long life was to sprinkle a little gunpowder on his oatmeal every morning. The grandson did this religiously, and he lived to be 97. When he died, he left behind 14 children, 27 grandchildren, 34 great-grandchildren and a 15-foot hole in the wall of the crematorium.
+2025-01-20 11:44:03.342 | WARNING  | __main__:main:96 - Consumer interrupted by user.
+2025-01-20 11:44:03.362 | INFO     | __main__:main:101 - Kafka consumer for topic 'buzzline' closed.
+2025-01-20 11:44:03.362 | INFO     | __main__:main:103 - END consumer for topic 'buzzline' and group 'default_group'.
+2025-01-20 11:44:03.814 | INFO     | __main__:generate_messages:79 - Dad joke: I used to play triangle in a reggae band. I would stand at the back and ting.
+2025-01-20 11:44:03.815 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I used to play triangle in a reggae band. I would stand at the back and ting.
+2025-01-20 11:44:04.815 | INFO     | __main__:generate_messages:79 - Dad joke: What do you call a black and white cow? Moo-latto
+2025-01-20 11:44:04.815 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do you call a black and white cow? Moo-latto
+2025-01-20 11:44:05.816 | INFO     | __main__:generate_messages:79 - Dad joke: Found a weird .exe file on your computer? Beware! Could be a set up.
+2025-01-20 11:44:05.816 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Found a weird .exe file on your computer? Beware! Could be a set up.
+2025-01-20 11:44:06.623 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-20 11:44:06.624 | INFO     | __main__:main:78 - START consumer.
+2025-01-20 11:44:06.624 | INFO     | __main__:get_kafka_topic:35 - Kafka topic: buzzline
+2025-01-20 11:44:06.624 | INFO     | __main__:get_kafka_consumer_group_id:42 - Kafka consumer group id: default_group
+2025-01-20 11:44:06.624 | INFO     | __main__:main:83 - Consumer: Topic 'buzzline' and group 'default_group'...
+2025-01-20 11:44:06.624 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 11:44:06.624 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='buzzline' and group ID='default_group'.
+2025-01-20 11:44:06.730 | INFO     | utils.utils_consumer:create_kafka_consumer:57 - Kafka consumer created successfully.
+2025-01-20 11:44:06.730 | INFO     | __main__:main:89 - Polling messages from topic 'buzzline'...
+2025-01-20 11:44:06.817 | INFO     | __main__:generate_messages:79 - Dad joke: I was walking along and I saw a guy fall into a nest of mosquitoes... ...it was malarious!
+2025-01-20 11:44:06.818 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I was walking along and I saw a guy fall into a nest of mosquitoes... ...it was malarious!
+2025-01-20 11:44:06.847 | INFO     | __main__:process_message:62 - Processing message: I used to play triangle in a reggae band. I would stand at the back and ting.
+2025-01-20 11:44:06.847 | INFO     | __main__:process_message:62 - Processing message: What do you call a black and white cow? Moo-latto
+2025-01-20 11:44:06.847 | INFO     | __main__:process_message:62 - Processing message: Found a weird .exe file on your computer? Beware! Could be a set up.
+2025-01-20 11:44:06.847 | INFO     | __main__:process_message:62 - Processing message: I was walking along and I saw a guy fall into a nest of mosquitoes... ...it was malarious!
+2025-01-20 11:44:07.818 | INFO     | __main__:generate_messages:79 - Dad joke: What do you call a group of 500 atoms? A Refund.*This post is brought to you by "Todd Howard did Nothing Wrong" gang*
+2025-01-20 11:44:07.819 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do you call a group of 500 atoms? A Refund.*This post is brought to you by "Todd Howard did Nothing Wrong" gang*
+2025-01-20 11:44:07.824 | INFO     | __main__:process_message:62 - Processing message: What do you call a group of 500 atoms? A Refund.*This post is brought to you by "Todd Howard did Nothing Wrong" gang*
+2025-01-20 11:44:08.820 | INFO     | __main__:generate_messages:79 - Dad joke: “Hey man, did your Geography teacher tell you what the newest US state is?” “ I don’t know, but Alaska.”
+2025-01-20 11:44:08.821 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': “Hey man, did your Geography teacher tell you what the newest US state is?” “ I don’t know, but Alaska.”
+2025-01-20 11:44:08.825 | INFO     | __main__:process_message:62 - Processing message: “Hey man, did your Geography teacher tell you what the newest US state is?” “ I don’t know, but Alaska.”
+2025-01-20 11:44:09.821 | INFO     | __main__:generate_messages:79 - Dad joke: German tourist visits Poland Guy at the airport: Nationality?German dude: GermanGuy at the airport: Occupation?German dude: Nein, nein, only vacation.
+2025-01-20 11:44:09.822 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': German tourist visits Poland Guy at the airport: Nationality?German dude: GermanGuy at the airport: Occupation?German dude: Nein, nein, only vacation.
+2025-01-20 11:44:09.827 | INFO     | __main__:process_message:62 - Processing message: German tourist visits Poland Guy at the airport: Nationality?German dude: GermanGuy at the airport: Occupation?German dude: Nein, nein, only vacation.
+2025-01-20 11:44:10.822 | INFO     | __main__:generate_messages:79 - Dad joke: Teachers from other countries make fun of the US education system Sure, we don’t teach evolution everywhere, but I don’t see your countries volunteering to demonstrate natural selection in schools across the country.
+2025-01-20 11:44:10.823 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Teachers from other countries make fun of the US education system Sure, we don’t teach evolution everywhere, but I don’t see your countries volunteering to demonstrate natural selection in schools across the country.
+2025-01-20 11:44:10.827 | INFO     | __main__:process_message:62 - Processing message: Teachers from other countries make fun of the US education system Sure, we don’t teach evolution everywhere, but I don’t see your countries volunteering to demonstrate natural selection in schools across the country.
+2025-01-20 11:44:11.823 | INFO     | __main__:generate_messages:79 - Dad joke: Who's the only organization with a higher death rate than PETA? The Make-A-Wish foundation.
+2025-01-20 11:44:11.823 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Who's the only organization with a higher death rate than PETA? The Make-A-Wish foundation.
+2025-01-20 11:44:11.825 | INFO     | __main__:process_message:62 - Processing message: Who's the only organization with a higher death rate than PETA? The Make-A-Wish foundation.
+2025-01-20 11:44:12.823 | INFO     | __main__:generate_messages:79 - Dad joke: Mother in law... Oh, I didn’t expect you at work today Mr. Brundy, isn’t it your mother-in-law’s funeral today?”“Well you know how it is.Work first, then fun.”
+2025-01-20 11:44:12.824 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Mother in law... Oh, I didn’t expect you at work today Mr. Brundy, isn’t it your mother-in-law’s funeral today?”“Well you know how it is.Work first, then fun.”
+2025-01-20 11:44:12.829 | INFO     | __main__:process_message:62 - Processing message: Mother in law... Oh, I didn’t expect you at work today Mr. Brundy, isn’t it your mother-in-law’s funeral today?”“Well you know how it is.Work first, then fun.”
+2025-01-20 11:44:13.824 | INFO     | __main__:generate_messages:79 - Dad joke: Why is it better to smell roses and lemons than poop? It’s just plain common scents.
+2025-01-20 11:44:13.825 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why is it better to smell roses and lemons than poop? It’s just plain common scents.
+2025-01-20 11:44:13.829 | INFO     | __main__:process_message:62 - Processing message: Why is it better to smell roses and lemons than poop? It’s just plain common scents.
+2025-01-20 11:44:14.826 | INFO     | __main__:generate_messages:79 - Dad joke: Two gentlemen are walking through the West End on their way to a show. One turns to the other and says, “I have a feeling a large number of right-wing wazzocks are going to be there tonight. Trust me, you’ll see the... Queue anon.
+2025-01-20 11:44:14.826 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Two gentlemen are walking through the West End on their way to a show. One turns to the other and says, “I have a feeling a large number of right-wing wazzocks are going to be there tonight. Trust me, you’ll see the... Queue anon.
+2025-01-20 11:44:14.832 | INFO     | __main__:process_message:62 - Processing message: Two gentlemen are walking through the West End on their way to a show. One turns to the other and says, “I have a feeling a large number of right-wing wazzocks are going to be there tonight. Trust me, you’ll see the... Queue anon.
+2025-01-20 11:44:15.826 | INFO     | __main__:generate_messages:79 - Dad joke: I'm surprised the pandemic has lasted this long. I thought trump trusted doctors to fix his mistakes before they hit 9 months
+2025-01-20 11:44:15.827 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I'm surprised the pandemic has lasted this long. I thought trump trusted doctors to fix his mistakes before they hit 9 months
+2025-01-20 11:44:15.832 | INFO     | __main__:process_message:62 - Processing message: I'm surprised the pandemic has lasted this long. I thought trump trusted doctors to fix his mistakes before they hit 9 months
+2025-01-20 11:44:16.828 | INFO     | __main__:generate_messages:79 - Dad joke: Today I found a Youtube channel about moss They told me to lichen subscribe
+2025-01-20 11:44:16.829 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Today I found a Youtube channel about moss They told me to lichen subscribe
+2025-01-20 11:44:16.833 | INFO     | __main__:process_message:62 - Processing message: Today I found a Youtube channel about moss They told me to lichen subscribe
+2025-01-20 11:44:17.829 | INFO     | __main__:generate_messages:79 - Dad joke: Did you hear about the cocaine addicted improv actor? He was constantly thinking about his next line
+2025-01-20 11:44:17.829 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Did you hear about the cocaine addicted improv actor? He was constantly thinking about his next line
+2025-01-20 11:44:17.834 | INFO     | __main__:process_message:62 - Processing message: Did you hear about the cocaine addicted improv actor? He was constantly thinking about his next line
+2025-01-20 11:44:18.830 | INFO     | __main__:generate_messages:79 - Dad joke: I once saw a ghost made of chocolate and vanilla Ice creamed
+2025-01-20 11:44:18.830 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I once saw a ghost made of chocolate and vanilla Ice creamed
+2025-01-20 11:44:18.836 | INFO     | __main__:process_message:62 - Processing message: I once saw a ghost made of chocolate and vanilla Ice creamed
+2025-01-20 11:44:19.831 | INFO     | __main__:generate_messages:79 - Dad joke: Stormy Daniels should run for president If we're going to have an inept asshole in office I'd rather have a bleached inept asshole
+2025-01-20 11:44:19.831 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Stormy Daniels should run for president If we're going to have an inept asshole in office I'd rather have a bleached inept asshole
+2025-01-20 11:44:19.835 | INFO     | __main__:process_message:62 - Processing message: Stormy Daniels should run for president If we're going to have an inept asshole in office I'd rather have a bleached inept asshole
+2025-01-20 11:44:20.833 | INFO     | __main__:generate_messages:79 - Dad joke: Me and my buddy Terrell went down to the library. Me and my buddy Terrell went down to the local library the other day.He said, "I wonder if the have any colored printers."I replied, "Geeze, Terrell, it's 2021, use whatever printer you want."
+2025-01-20 11:44:20.833 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Me and my buddy Terrell went down to the library. Me and my buddy Terrell went down to the local library the other day.He said, "I wonder if the have any colored printers."I replied, "Geeze, Terrell, it's 2021, use whatever printer you want."
+2025-01-20 11:44:20.837 | INFO     | __main__:process_message:62 - Processing message: Me and my buddy Terrell went down to the library. Me and my buddy Terrell went down to the local library the other day.He said, "I wonder if the have any colored printers."I replied, "Geeze, Terrell, it's 2021, use whatever printer you want."
+2025-01-20 11:44:21.834 | INFO     | __main__:generate_messages:79 - Dad joke: I got startled by my timer going off. It was alarming.
+2025-01-20 11:44:21.835 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I got startled by my timer going off. It was alarming.
+2025-01-20 11:44:21.837 | INFO     | __main__:process_message:62 - Processing message: I got startled by my timer going off. It was alarming.
+2025-01-20 11:44:22.835 | INFO     | __main__:generate_messages:79 - Dad joke: Don't forget to tip your server, that's what they always say... But then I got fired from the Google Datacenter.
+2025-01-20 11:44:22.836 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Don't forget to tip your server, that's what they always say... But then I got fired from the Google Datacenter.
+2025-01-20 11:44:22.841 | INFO     | __main__:process_message:62 - Processing message: Don't forget to tip your server, that's what they always say... But then I got fired from the Google Datacenter.
+2025-01-20 11:44:23.836 | INFO     | __main__:generate_messages:79 - Dad joke: What does a Japanese Soldier and a Actor have in common? When they get discovered, their career blows up.
+2025-01-20 11:44:23.837 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What does a Japanese Soldier and a Actor have in common? When they get discovered, their career blows up.
+2025-01-20 11:44:23.841 | INFO     | __main__:process_message:62 - Processing message: What does a Japanese Soldier and a Actor have in common? When they get discovered, their career blows up.
+2025-01-20 11:44:24.837 | INFO     | __main__:generate_messages:79 - Dad joke: When my Great Grandfather died they cremated his body but kept his toupee. It is considered a family hairloom.
+2025-01-20 11:44:24.837 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': When my Great Grandfather died they cremated his body but kept his toupee. It is considered a family hairloom.
+2025-01-20 11:44:24.842 | INFO     | __main__:process_message:62 - Processing message: When my Great Grandfather died they cremated his body but kept his toupee. It is considered a family hairloom.
+2025-01-20 11:44:25.838 | INFO     | __main__:generate_messages:79 - Dad joke: What does a stoner do when he sees a space man? He parks in it, man.
+2025-01-20 11:44:25.839 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What does a stoner do when he sees a space man? He parks in it, man.
+2025-01-20 11:44:25.843 | INFO     | __main__:process_message:62 - Processing message: What does a stoner do when he sees a space man? He parks in it, man.
+2025-01-20 11:44:26.840 | INFO     | __main__:generate_messages:79 - Dad joke: if Lays had invented air hockey it would be just air
+2025-01-20 11:44:26.840 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': if Lays had invented air hockey it would be just air
+2025-01-20 11:44:26.841 | INFO     | __main__:process_message:62 - Processing message: if Lays had invented air hockey it would be just air
+2025-01-20 11:44:27.840 | INFO     | __main__:generate_messages:79 - Dad joke: Did you know your pupils are the last part to stop working when you die? They dilate.
+2025-01-20 11:44:27.841 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Did you know your pupils are the last part to stop working when you die? They dilate.
+2025-01-20 11:44:27.845 | INFO     | __main__:process_message:62 - Processing message: Did you know your pupils are the last part to stop working when you die? They dilate.
+2025-01-20 11:44:28.841 | INFO     | __main__:generate_messages:79 - Dad joke: My new sweater had a problem with static so I returned it. They gave me a new one free of charge.
+2025-01-20 11:44:28.842 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': My new sweater had a problem with static so I returned it. They gave me a new one free of charge.
+2025-01-20 11:44:28.846 | INFO     | __main__:process_message:62 - Processing message: My new sweater had a problem with static so I returned it. They gave me a new one free of charge.
+2025-01-20 11:44:29.843 | INFO     | __main__:generate_messages:79 - Dad joke: Why did the coffee file a police report? It got mugged.
+2025-01-20 11:44:29.843 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why did the coffee file a police report? It got mugged.
+2025-01-20 11:44:29.848 | INFO     | __main__:process_message:62 - Processing message: Why did the coffee file a police report? It got mugged.
+2025-01-20 11:44:30.844 | INFO     | __main__:generate_messages:79 - Dad joke: I went to buy some camouflage trousers the other day but I couldn't find any.
+2025-01-20 11:44:30.845 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I went to buy some camouflage trousers the other day but I couldn't find any.
+2025-01-20 11:44:30.849 | INFO     | __main__:process_message:62 - Processing message: I went to buy some camouflage trousers the other day but I couldn't find any.
+2025-01-20 11:44:31.846 | INFO     | __main__:generate_messages:79 - Dad joke: I can sum up 2021 in one word. Five
+2025-01-20 11:44:31.846 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I can sum up 2021 in one word. Five
+2025-01-20 11:44:31.849 | INFO     | __main__:process_message:62 - Processing message: I can sum up 2021 in one word. Five
+2025-01-20 11:44:32.847 | INFO     | __main__:generate_messages:79 - Dad joke: How do you tell the difference between a bull and a milk cow? It is either one or the utter.
+2025-01-20 11:44:32.847 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': How do you tell the difference between a bull and a milk cow? It is either one or the utter.
+2025-01-20 11:44:32.852 | INFO     | __main__:process_message:62 - Processing message: How do you tell the difference between a bull and a milk cow? It is either one or the utter.
+2025-01-20 11:44:33.848 | INFO     | __main__:generate_messages:79 - Dad joke: What does a mobster buried in cement soon become? A hardened criminal.
+2025-01-20 11:44:33.849 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What does a mobster buried in cement soon become? A hardened criminal.
+2025-01-20 11:44:33.854 | INFO     | __main__:process_message:62 - Processing message: What does a mobster buried in cement soon become? A hardened criminal.
+2025-01-20 11:44:34.849 | INFO     | __main__:generate_messages:79 - Dad joke: What do you get when you cross a polar bear with a seal? A polar bear.
+2025-01-20 11:44:34.850 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do you get when you cross a polar bear with a seal? A polar bear.
+2025-01-20 11:44:34.855 | INFO     | __main__:process_message:62 - Processing message: What do you get when you cross a polar bear with a seal? A polar bear.
+2025-01-20 11:44:35.850 | INFO     | __main__:generate_messages:79 - Dad joke: Wanna hear a joke about paper? Never mind - it's tearable.
+2025-01-20 11:44:35.851 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Wanna hear a joke about paper? Never mind - it's tearable.
+2025-01-20 11:44:35.855 | INFO     | __main__:process_message:62 - Processing message: Wanna hear a joke about paper? Never mind - it's tearable.
+2025-01-20 11:44:36.851 | INFO     | __main__:generate_messages:79 - Dad joke: Did you hear about the bacon cheeseburger who couldn't stop telling jokes? It was on a roll.
+2025-01-20 11:44:36.851 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Did you hear about the bacon cheeseburger who couldn't stop telling jokes? It was on a roll.
+2025-01-20 11:44:36.853 | INFO     | __main__:process_message:62 - Processing message: Did you hear about the bacon cheeseburger who couldn't stop telling jokes? It was on a roll.
+2025-01-20 11:44:37.852 | INFO     | __main__:generate_messages:79 - Dad joke: My wife left a note on the fridge that said, 'This isn't working.' I’m not sure what she’s talking about. I opened the fridge door and it’s working fine! 
+2025-01-20 11:44:37.852 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': My wife left a note on the fridge that said, 'This isn't working.' I’m not sure what she’s talking about. I opened the fridge door and it’s working fine! 
+2025-01-20 11:44:37.856 | INFO     | __main__:process_message:62 - Processing message: My wife left a note on the fridge that said, 'This isn't working.' I’m not sure what she’s talking about. I opened the fridge door and it’s working fine! 
+2025-01-20 11:44:38.853 | INFO     | __main__:generate_messages:79 - Dad joke: What crime do blacksmiths most commonly get charged with? Forgery. 
+2025-01-20 11:44:38.854 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What crime do blacksmiths most commonly get charged with? Forgery. 
+2025-01-20 11:44:38.858 | INFO     | __main__:process_message:62 - Processing message: What crime do blacksmiths most commonly get charged with? Forgery. 
+2025-01-20 11:44:39.854 | INFO     | __main__:generate_messages:79 - Dad joke: What do you call a bear with no teeth? A gummy bear. 
+2025-01-20 11:44:39.855 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do you call a bear with no teeth? A gummy bear. 
+2025-01-20 11:44:39.859 | INFO     | __main__:process_message:62 - Processing message: What do you call a bear with no teeth? A gummy bear. 
+2025-01-20 11:44:40.856 | INFO     | __main__:generate_messages:79 - Dad joke: What do you call a belt made of watches?' 'A waist of time.' 
+2025-01-20 11:44:40.856 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do you call a belt made of watches?' 'A waist of time.' 
+2025-01-20 11:44:40.860 | INFO     | __main__:process_message:62 - Processing message: What do you call a belt made of watches?' 'A waist of time.' 
+2025-01-20 11:44:41.856 | INFO     | __main__:generate_messages:79 - Dad joke: I once wrote a song about a tortilla, but it's more of a wrap. 
+2025-01-20 11:44:41.857 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I once wrote a song about a tortilla, but it's more of a wrap. 
+2025-01-20 11:44:41.861 | INFO     | __main__:process_message:62 - Processing message: I once wrote a song about a tortilla, but it's more of a wrap. 
+2025-01-20 11:44:42.858 | INFO     | __main__:generate_messages:79 - Dad joke: Do I enjoy making courthouse puns? Guilty. 
+2025-01-20 11:44:42.859 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Do I enjoy making courthouse puns? Guilty. 
+2025-01-20 11:44:42.864 | INFO     | __main__:process_message:62 - Processing message: Do I enjoy making courthouse puns? Guilty. 
+2025-01-20 11:44:43.860 | INFO     | __main__:generate_messages:79 - Dad joke: I once wrote a song about a tortilla, but it's more of a wrap. 
+2025-01-20 11:44:43.860 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I once wrote a song about a tortilla, but it's more of a wrap. 
+2025-01-20 11:44:43.865 | INFO     | __main__:process_message:62 - Processing message: I once wrote a song about a tortilla, but it's more of a wrap. 
+2025-01-20 11:44:44.860 | INFO     | __main__:generate_messages:79 - Dad joke: If you donate a kidney, everybody loves you and you’re a total hero. But try donating five kidneys and suddenly everyone is yelling and the police get called. 
+2025-01-20 11:44:44.861 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': If you donate a kidney, everybody loves you and you’re a total hero. But try donating five kidneys and suddenly everyone is yelling and the police get called. 
+2025-01-20 11:44:44.866 | INFO     | __main__:process_message:62 - Processing message: If you donate a kidney, everybody loves you and you’re a total hero. But try donating five kidneys and suddenly everyone is yelling and the police get called. 
+2025-01-20 11:44:45.861 | INFO     | __main__:generate_messages:79 - Dad joke: What do you call someone with no body and no nose? Nobody knows. 
+2025-01-20 11:44:45.862 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do you call someone with no body and no nose? Nobody knows. 
+2025-01-20 11:44:45.867 | INFO     | __main__:process_message:62 - Processing message: What do you call someone with no body and no nose? Nobody knows. 
+2025-01-20 11:44:46.863 | INFO     | __main__:generate_messages:79 - Dad joke: Did you hear about the french general who stepped on a landmine? Napoleon Blown Apart. 
+2025-01-20 11:44:46.864 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Did you hear about the french general who stepped on a landmine? Napoleon Blown Apart. 
+2025-01-20 11:44:46.867 | INFO     | __main__:process_message:62 - Processing message: Did you hear about the french general who stepped on a landmine? Napoleon Blown Apart. 
+2025-01-20 11:44:47.864 | INFO     | __main__:generate_messages:79 - Dad joke: Why do bees have sticky hair? Because they use a honeycomb. 
+2025-01-20 11:44:47.864 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why do bees have sticky hair? Because they use a honeycomb. 
+2025-01-20 11:44:47.868 | INFO     | __main__:process_message:62 - Processing message: Why do bees have sticky hair? Because they use a honeycomb. 
+2025-01-20 11:44:48.865 | INFO     | __main__:generate_messages:79 - Dad joke: How does the moon cut his hair?' 'Eclipse it.' 
+2025-01-20 11:44:48.866 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': How does the moon cut his hair?' 'Eclipse it.' 
+2025-01-20 11:44:48.871 | INFO     | __main__:process_message:62 - Processing message: How does the moon cut his hair?' 'Eclipse it.' 
+2025-01-20 11:44:49.867 | INFO     | __main__:generate_messages:79 - Dad joke: Where do you learn all about ice cream? Sundae school. 
+2025-01-20 11:44:49.867 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Where do you learn all about ice cream? Sundae school. 
+2025-01-20 11:44:49.871 | INFO     | __main__:process_message:62 - Processing message: Where do you learn all about ice cream? Sundae school. 
+2025-01-20 11:44:50.868 | INFO     | __main__:generate_messages:79 - Dad joke: I was going to tell a time-traveling joke, but you guys didn't like it.' 
+2025-01-20 11:44:50.868 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I was going to tell a time-traveling joke, but you guys didn't like it.' 
+2025-01-20 11:44:50.872 | INFO     | __main__:process_message:62 - Processing message: I was going to tell a time-traveling joke, but you guys didn't like it.' 
+2025-01-20 11:44:51.869 | INFO     | __main__:generate_messages:79 - Dad joke: Why can’t you send a duck to space? Because the bill would be astronomical. 
+2025-01-20 11:44:51.870 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why can’t you send a duck to space? Because the bill would be astronomical. 
+2025-01-20 11:44:51.873 | INFO     | __main__:process_message:62 - Processing message: Why can’t you send a duck to space? Because the bill would be astronomical. 
+2025-01-20 11:44:52.871 | INFO     | __main__:generate_messages:79 - Dad joke: How do you make a tissue dance? You put a little boogie in it. 
+2025-01-20 11:44:52.871 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': How do you make a tissue dance? You put a little boogie in it. 
+2025-01-20 11:44:52.875 | INFO     | __main__:process_message:62 - Processing message: How do you make a tissue dance? You put a little boogie in it. 
+2025-01-20 11:44:53.872 | INFO     | __main__:generate_messages:79 - Dad joke: I ate a clock the other day. It was very time consuming. 
+2025-01-20 11:44:53.873 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I ate a clock the other day. It was very time consuming. 
+2025-01-20 11:44:53.877 | INFO     | __main__:process_message:62 - Processing message: I ate a clock the other day. It was very time consuming. 
+2025-01-20 11:44:54.874 | INFO     | __main__:generate_messages:79 - Dad joke: What’s worse than biting into an apple and finding a worm? Biting into an apple and finding half a worm. 
+2025-01-20 11:44:54.874 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What’s worse than biting into an apple and finding a worm? Biting into an apple and finding half a worm. 
+2025-01-20 11:44:54.878 | INFO     | __main__:process_message:62 - Processing message: What’s worse than biting into an apple and finding a worm? Biting into an apple and finding half a worm. 
+2025-01-20 11:44:55.875 | INFO     | __main__:generate_messages:79 - Dad joke: What rock group has four men who don't sing? Mount Rushmore. 
+2025-01-20 11:44:55.875 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What rock group has four men who don't sing? Mount Rushmore. 
+2025-01-20 11:44:55.877 | INFO     | __main__:process_message:62 - Processing message: What rock group has four men who don't sing? Mount Rushmore. 
+2025-01-20 11:44:56.876 | INFO     | __main__:generate_messages:79 - Dad joke: I'm reading a horror story in braille. Something bad is going to happen, I can just feel it. 
+2025-01-20 11:44:56.876 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I'm reading a horror story in braille. Something bad is going to happen, I can just feel it. 
+2025-01-20 11:44:56.878 | INFO     | __main__:process_message:62 - Processing message: I'm reading a horror story in braille. Something bad is going to happen, I can just feel it. 
+2025-01-20 11:44:57.876 | INFO     | __main__:generate_messages:79 - Dad joke: Cooking out this weekend? Don’t forget the pickle. It’s kind of a big dill. 
+2025-01-20 11:44:57.877 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Cooking out this weekend? Don’t forget the pickle. It’s kind of a big dill. 
+2025-01-20 11:44:57.881 | INFO     | __main__:process_message:62 - Processing message: Cooking out this weekend? Don’t forget the pickle. It’s kind of a big dill. 
+2025-01-20 11:44:58.877 | INFO     | __main__:generate_messages:79 - Dad joke: What do you call Bill Gates when he’s flying? A Bill-in-air. 
+2025-01-20 11:44:58.878 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do you call Bill Gates when he’s flying? A Bill-in-air. 
+2025-01-20 11:44:58.882 | INFO     | __main__:process_message:62 - Processing message: What do you call Bill Gates when he’s flying? A Bill-in-air. 
+2025-01-20 11:44:59.878 | INFO     | __main__:generate_messages:79 - Dad joke: What rock group has four men who don't sing? Mount Rushmore. 
+2025-01-20 11:44:59.879 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What rock group has four men who don't sing? Mount Rushmore. 
+2025-01-20 11:44:59.883 | INFO     | __main__:process_message:62 - Processing message: What rock group has four men who don't sing? Mount Rushmore. 
+2025-01-20 11:45:00.880 | INFO     | __main__:generate_messages:79 - Dad joke: What do you call a magician who loses his magic? Ian. 
+2025-01-20 11:45:00.880 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do you call a magician who loses his magic? Ian. 
+2025-01-20 11:45:00.882 | INFO     | __main__:process_message:62 - Processing message: What do you call a magician who loses his magic? Ian. 
+2025-01-20 11:45:01.880 | INFO     | __main__:generate_messages:79 - Dad joke: Where do boats go when they’re sick? To the boat doc. 
+2025-01-20 11:45:01.881 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Where do boats go when they’re sick? To the boat doc. 
+2025-01-20 11:45:01.884 | INFO     | __main__:process_message:62 - Processing message: Where do boats go when they’re sick? To the boat doc. 
+2025-01-20 11:45:02.882 | INFO     | __main__:generate_messages:79 - Dad joke: What do you get when you cross a polar bear with a seal? A polar bear. 
+2025-01-20 11:45:02.882 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do you get when you cross a polar bear with a seal? A polar bear. 
+2025-01-20 11:45:02.886 | INFO     | __main__:process_message:62 - Processing message: What do you get when you cross a polar bear with a seal? A polar bear. 
+2025-01-20 11:45:03.883 | INFO     | __main__:generate_messages:79 - Dad joke: Did you hear about the guy who froze to death at the drive-in? He went to see Closed for the Winter. 
+2025-01-20 11:45:03.884 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Did you hear about the guy who froze to death at the drive-in? He went to see Closed for the Winter. 
+2025-01-20 11:45:03.888 | INFO     | __main__:process_message:62 - Processing message: Did you hear about the guy who froze to death at the drive-in? He went to see Closed for the Winter. 
+2025-01-20 11:45:04.885 | INFO     | __main__:generate_messages:79 - Dad joke: Why can’t you send a duck to space? Because the bill would be astronomical. 
+2025-01-20 11:45:04.885 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why can’t you send a duck to space? Because the bill would be astronomical. 
+2025-01-20 11:45:04.889 | INFO     | __main__:process_message:62 - Processing message: Why can’t you send a duck to space? Because the bill would be astronomical. 
+2025-01-20 11:45:05.886 | INFO     | __main__:generate_messages:79 - Dad joke: What do houses wear? An address. 
+2025-01-20 11:45:05.886 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do houses wear? An address. 
+2025-01-20 11:45:05.890 | INFO     | __main__:process_message:62 - Processing message: What do houses wear? An address. 
+2025-01-20 11:45:06.887 | INFO     | __main__:generate_messages:79 - Dad joke: It hurts me to say this, but … I have a sore throat. 
+2025-01-20 11:45:06.888 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': It hurts me to say this, but … I have a sore throat. 
+2025-01-20 11:45:06.892 | INFO     | __main__:process_message:62 - Processing message: It hurts me to say this, but … I have a sore throat. 
+2025-01-20 11:45:07.889 | INFO     | __main__:generate_messages:79 - Dad joke: Give a man a plane ticket and he flies for the day. Push him out of the plane at 3,000 feet and he’ll fly for the rest of his life. 
+2025-01-20 11:45:07.889 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Give a man a plane ticket and he flies for the day. Push him out of the plane at 3,000 feet and he’ll fly for the rest of his life. 
+2025-01-20 11:45:07.894 | INFO     | __main__:process_message:62 - Processing message: Give a man a plane ticket and he flies for the day. Push him out of the plane at 3,000 feet and he’ll fly for the rest of his life. 
+2025-01-20 11:45:08.890 | INFO     | __main__:generate_messages:79 - Dad joke: I once got fired from a canned juice factory. Apparently I couldn’t concentrate. 
+2025-01-20 11:45:08.890 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I once got fired from a canned juice factory. Apparently I couldn’t concentrate. 
+2025-01-20 11:45:08.895 | INFO     | __main__:process_message:62 - Processing message: I once got fired from a canned juice factory. Apparently I couldn’t concentrate. 
+2025-01-20 11:45:09.891 | INFO     | __main__:generate_messages:79 - Dad joke: I remember as a kid, my dad got fired from his job as a road worker for theft. I refused to believe he could do such a thing, but when I got home, the signs were all there. 
+2025-01-20 11:45:09.891 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I remember as a kid, my dad got fired from his job as a road worker for theft. I refused to believe he could do such a thing, but when I got home, the signs were all there. 
+2025-01-20 11:45:09.895 | INFO     | __main__:process_message:62 - Processing message: I remember as a kid, my dad got fired from his job as a road worker for theft. I refused to believe he could do such a thing, but when I got home, the signs were all there. 
+2025-01-20 11:45:10.892 | INFO     | __main__:generate_messages:79 - Dad joke: I just found out Albert Einstein existed. My whole life I thought he was a theoretical physicist.A comma. A literalist takes everything literally. A kleptomaniac takes everything, literally. 
+2025-01-20 11:45:10.893 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I just found out Albert Einstein existed. My whole life I thought he was a theoretical physicist.A comma. A literalist takes everything literally. A kleptomaniac takes everything, literally. 
+2025-01-20 11:45:10.897 | INFO     | __main__:process_message:62 - Processing message: I just found out Albert Einstein existed. My whole life I thought he was a theoretical physicist.A comma. A literalist takes everything literally. A kleptomaniac takes everything, literally. 
+2025-01-20 11:45:11.894 | INFO     | __main__:generate_messages:79 - Dad joke: My therapist told me I have problems with verbalising my emotions. Can’t say I’m suprised. 
+2025-01-20 11:45:11.895 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': My therapist told me I have problems with verbalising my emotions. Can’t say I’m suprised. 
+2025-01-20 11:45:11.899 | INFO     | __main__:process_message:62 - Processing message: My therapist told me I have problems with verbalising my emotions. Can’t say I’m suprised. 
+2025-01-20 11:45:12.896 | INFO     | __main__:generate_messages:79 - Dad joke: Which days are the strongest? Saturday and Sunday. The rest are weekdays. 
+2025-01-20 11:45:12.896 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Which days are the strongest? Saturday and Sunday. The rest are weekdays. 
+2025-01-20 11:45:12.900 | INFO     | __main__:process_message:62 - Processing message: Which days are the strongest? Saturday and Sunday. The rest are weekdays. 
+2025-01-20 11:45:13.896 | INFO     | __main__:generate_messages:79 - Dad joke: If April showers bring May flowers, what do May flowers bring?' 'Pilgrims.' 
+2025-01-20 11:45:13.897 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': If April showers bring May flowers, what do May flowers bring?' 'Pilgrims.' 
+2025-01-20 11:45:13.901 | INFO     | __main__:process_message:62 - Processing message: If April showers bring May flowers, what do May flowers bring?' 'Pilgrims.' 
+2025-01-20 11:45:14.897 | INFO     | __main__:generate_messages:79 - Dad joke: My kid wants to invent a pencil with an eraser on each end, but I just don’t see the point. 
+2025-01-20 11:45:14.898 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': My kid wants to invent a pencil with an eraser on each end, but I just don’t see the point. 
+2025-01-20 11:45:14.900 | INFO     | __main__:process_message:62 - Processing message: My kid wants to invent a pencil with an eraser on each end, but I just don’t see the point. 
+2025-01-20 11:45:15.898 | INFO     | __main__:generate_messages:79 - Dad joke: I only know 25 letters of the alphabet. I don't know y.' 
+2025-01-20 11:45:15.898 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I only know 25 letters of the alphabet. I don't know y.' 
+2025-01-20 11:45:15.900 | INFO     | __main__:process_message:62 - Processing message: I only know 25 letters of the alphabet. I don't know y.' 
+2025-01-20 11:45:16.898 | INFO     | __main__:generate_messages:79 - Dad joke: Did you get your haircut?' No, I got them all cut. 
+2025-01-20 11:45:16.899 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Did you get your haircut?' No, I got them all cut. 
+2025-01-20 11:45:16.903 | INFO     | __main__:process_message:62 - Processing message: Did you get your haircut?' No, I got them all cut. 
+2025-01-20 11:45:17.899 | INFO     | __main__:generate_messages:79 - Dad joke: I was researching about Atheism. Turns out it’s a non-prophet organization. 
+2025-01-20 11:45:17.900 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I was researching about Atheism. Turns out it’s a non-prophet organization. 
+2025-01-20 11:45:17.904 | INFO     | __main__:process_message:62 - Processing message: I was researching about Atheism. Turns out it’s a non-prophet organization. 
+2025-01-20 11:45:18.900 | INFO     | __main__:generate_messages:79 - Dad joke: Where do math teachers go on vacation? Times Square. 
+2025-01-20 11:45:18.901 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Where do math teachers go on vacation? Times Square. 
+2025-01-20 11:45:18.905 | INFO     | __main__:process_message:62 - Processing message: Where do math teachers go on vacation? Times Square. 
+2025-01-20 11:45:19.902 | INFO     | __main__:generate_messages:79 - Dad joke: Never date a tennis player. Love means nothing to them. 
+2025-01-20 11:45:19.902 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Never date a tennis player. Love means nothing to them. 
+2025-01-20 11:45:19.907 | INFO     | __main__:process_message:62 - Processing message: Never date a tennis player. Love means nothing to them. 
+2025-01-20 11:45:20.902 | INFO     | __main__:generate_messages:79 - Dad joke: Siri,' I asked my phone, 'why am I so bad with women?' She responded, 'I’m Bixby, you moron.' 
+2025-01-20 11:45:20.903 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Siri,' I asked my phone, 'why am I so bad with women?' She responded, 'I’m Bixby, you moron.' 
+2025-01-20 11:45:20.907 | INFO     | __main__:process_message:62 - Processing message: Siri,' I asked my phone, 'why am I so bad with women?' She responded, 'I’m Bixby, you moron.' 
+2025-01-20 11:45:21.903 | INFO     | __main__:generate_messages:79 - Dad joke: I'd avoid the sushi if I were you. It's a little fishy! 
+2025-01-20 11:45:21.904 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I'd avoid the sushi if I were you. It's a little fishy! 
+2025-01-20 11:45:21.907 | INFO     | __main__:process_message:62 - Processing message: I'd avoid the sushi if I were you. It's a little fishy! 
+2025-01-20 11:45:22.904 | INFO     | __main__:generate_messages:79 - Dad joke: Why are fish so smart? They live in schools! 
+2025-01-20 11:45:22.905 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why are fish so smart? They live in schools! 
+2025-01-20 11:45:22.909 | INFO     | __main__:process_message:62 - Processing message: Why are fish so smart? They live in schools! 
+2025-01-20 11:45:23.906 | INFO     | __main__:generate_messages:79 - Dad joke: What do you call a hot dog on wheels?' 'Fast food!' 
+2025-01-20 11:45:23.906 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do you call a hot dog on wheels?' 'Fast food!' 
+2025-01-20 11:45:23.910 | INFO     | __main__:process_message:62 - Processing message: What do you call a hot dog on wheels?' 'Fast food!' 
+2025-01-20 11:45:24.906 | INFO     | __main__:generate_messages:79 - Dad joke: In fact, if you sneer at any other method of measuring liquids, you may be held in contempt of quart. 
+2025-01-20 11:45:24.907 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': In fact, if you sneer at any other method of measuring liquids, you may be held in contempt of quart. 
+2025-01-20 11:45:24.911 | INFO     | __main__:process_message:62 - Processing message: In fact, if you sneer at any other method of measuring liquids, you may be held in contempt of quart. 
+2025-01-20 11:45:25.907 | INFO     | __main__:generate_messages:79 - Dad joke: What do houses wear? An address. 
+2025-01-20 11:45:25.908 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': What do houses wear? An address. 
+2025-01-20 11:45:25.912 | INFO     | __main__:process_message:62 - Processing message: What do houses wear? An address. 
+2025-01-20 11:45:26.909 | INFO     | __main__:generate_messages:79 - Dad joke: I asked the librarian if books about paranoia were avaiable. 
+2025-01-20 11:45:26.909 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I asked the librarian if books about paranoia were avaiable. 
+2025-01-20 11:45:26.913 | INFO     | __main__:process_message:62 - Processing message: I asked the librarian if books about paranoia were avaiable. 
+2025-01-20 11:45:27.910 | INFO     | __main__:generate_messages:79 - Dad joke: My wife left a note on the fridge that said, “This isn't working.” I’m not sure what she’s talking about. I opened the fridge door and it’s working fine!
+2025-01-20 11:45:27.910 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': My wife left a note on the fridge that said, “This isn't working.” I’m not sure what she’s talking about. I opened the fridge door and it’s working fine!
+2025-01-20 11:45:27.911 | INFO     | __main__:process_message:62 - Processing message: My wife left a note on the fridge that said, “This isn't working.” I’m not sure what she’s talking about. I opened the fridge door and it’s working fine!
+2025-01-20 11:45:28.910 | INFO     | __main__:generate_messages:79 - Dad joke: Why do you never see elephants hiding in trees? Because they’re so good at it!
+2025-01-20 11:45:28.911 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why do you never see elephants hiding in trees? Because they’re so good at it!
+2025-01-20 11:45:28.915 | INFO     | __main__:process_message:62 - Processing message: Why do you never see elephants hiding in trees? Because they’re so good at it!
+2025-01-20 11:45:29.911 | INFO     | __main__:generate_messages:79 - Dad joke: Why did the orange lose the race? It ran out of juice.
+2025-01-20 11:45:29.911 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': Why did the orange lose the race? It ran out of juice.
+2025-01-20 11:45:29.915 | INFO     | __main__:process_message:62 - Processing message: Why did the orange lose the race? It ran out of juice.
+2025-01-20 11:45:30.912 | INFO     | __main__:generate_messages:79 - Dad joke: I ordered a chicken and an egg from Amazon. I’ll let you know.
+2025-01-20 11:45:30.912 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I ordered a chicken and an egg from Amazon. I’ll let you know.
+2025-01-20 11:45:30.917 | INFO     | __main__:process_message:62 - Processing message: I ordered a chicken and an egg from Amazon. I’ll let you know.
+2025-01-20 11:45:31.913 | INFO     | __main__:generate_messages:79 - Dad joke: I went to the zoo and saw a baguette in a cage. The zookeeper said it was bread in captivity.
+2025-01-20 11:45:31.914 | INFO     | __main__:generate_messages:81 - Sent message to topic 'buzzline': I went to the zoo and saw a baguette in a cage. The zookeeper said it was bread in captivity.
+2025-01-20 11:45:31.918 | INFO     | __main__:process_message:62 - Processing message: I went to the zoo and saw a baguette in a cage. The zookeeper said it was bread in captivity.
+2025-01-20 11:45:32.441 | WARNING  | __main__:generate_messages:84 - Producer interrupted by user.
+2025-01-20 11:45:32.442 | INFO     | __main__:generate_messages:89 - Kafka producer closed.
+2025-01-20 11:45:32.443 | INFO     | __main__:main:130 - END producer.
+2025-01-20 11:45:34.617 | WARNING  | __main__:main:96 - Consumer interrupted by user.
+2025-01-20 11:45:34.624 | INFO     | __main__:main:101 - Kafka consumer for topic 'buzzline' closed.
+2025-01-20 11:45:34.624 | INFO     | __main__:main:103 - END consumer for topic 'buzzline' and group 'default_group'.

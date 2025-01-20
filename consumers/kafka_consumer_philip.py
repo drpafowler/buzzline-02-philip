@@ -90,7 +90,7 @@ def main() -> None:
     try:
         for message in consumer:
             message_str = message.value
-            logger.debug(f"Received message at offset {message.offset}: {message_str}")
+            logger.debug(f"Received Dad joke number {message.offset}: {message_str}")
             process_message(message_str)
     except KeyboardInterrupt:
         logger.warning("Consumer interrupted by user.")
