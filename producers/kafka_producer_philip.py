@@ -24,6 +24,7 @@ from utils.utils_producer import (
     create_kafka_topic,
 )
 from utils.utils_logger import logger
+import random
 
 #####################################
 # Load Environment Variables
